@@ -1,0 +1,21 @@
+#RTSS Configuration File
+
+#protocol must be specified before ports' numbers
+
+EdgeRtr_IF: enp3s0
+ISP_Rtr_IF: wlp1s0b1
+
+target:
+	addr: 192.168.2.1
+
+	trfc:
+	addr: 209.51.188.148
+	proto: 6
+	sport: 80
+	dport: 257
+	,
+	;
+
+209.51.188.148
+#experimental
+

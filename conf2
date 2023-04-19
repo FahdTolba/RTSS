@@ -1,0 +1,70 @@
+#RTSS Configuration File
+
+#protocol must be specified before ports' numbers
+
+EdgeRtr_IF: enp3s0
+ISP_Rtr_IF: wlp1s0b1
+
+target:
+	addr: 192.168.2.2 
+	
+	trfc:
+	addr: 198.41.0.4
+	proto: 1
+	sport: 8
+	dport: 55
+	,
+	trfc:
+	addr: 199.9.14.201
+	proto: 1
+	sport: 8
+	dport: 77
+        ,
+	trfc:
+	addr: 192.33.4.12
+	proto: 1
+	sport: 8
+	dport: 579
+        ,
+	trfc:
+	addr: 199.7.91.13
+	proto: 1
+	sport: 8
+	dport: 998
+        ,
+	trfc:
+	addr: 192.203.230.10
+	proto: 1
+	sport: 8
+	dport: 555
+        ,
+	;
+
+209.51.188.148
+#experimental
+#target:
+        a = 2.10.11.3
+        pr = 17
+        p = 50000
+	app = DNS
+        tr_a = 40.27.3.15       #either a -> address of server to contact, or n -> hostname of server
+        tr_pr = 17      #l4 protocol
+        tr_p = 53
+
+#target:
+        a = 2.10.11.3
+        pr = 17
+        p = 50000
+	app = HTTP
+        tr_a = 40.27.3.15       #either a -> address of server to contact, or n -> hostname of server
+        tr_pr = 17      #l4 protocol
+        tr_p = 53
+
+
+	
+
+NOTE: I should learn how to write a module for parsing 
+	in either perl, python or even awk
+	and either invoke an accompanying script from
+	the C code, or compile the script into a linkable object
+

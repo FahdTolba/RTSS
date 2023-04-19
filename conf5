@@ -1,0 +1,22 @@
+#RTSS Configuration File
+
+#protocol must be specified before ports' numbers
+
+EdgeRtr_IF: enp3s0
+ISP_Rtr_IF: wlp1s0b1
+
+target:
+	addr: 185.10.1.2 
+	
+	trfc:
+	addr: 199.9.14.201
+	proto: 17
+	sport: 53
+	dport: 257
+	app: dns_q.facebook.com
+	,
+	;
+
+209.51.188.148
+#experimental
+
